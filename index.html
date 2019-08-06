@@ -91,8 +91,9 @@
           fileInput.addEventListener('change', (e) => doSomethingWithFiles(e.target.files));
         </script>
       </div>
-      <div class="input-field center">
-        <button class="btn-small">Add</button>
+      <div class="form-buttons input-field center">
+        <button id="add-ship-button" class="btn-form btn-small" type="submit" data-fir-click="add_ship">Add</button>
+        <button id="clear-form-button" class="btn-form btn-small" data-fir-click="clear_form">Clear</button>
       </div>
     </form>
   </div>
