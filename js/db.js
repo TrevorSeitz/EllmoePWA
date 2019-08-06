@@ -31,9 +31,14 @@ const form = document.querySelector('form')
 form.addEventListener('submit', evt => {
   evt.preventDefault()
 
+    console.log("Form Data: ", form)
   const location = {
-    name: form.title.value,
-    // ingredients: form.ingredients.value
+  name: form.name.value,
+  venue: form.venue.value,
+  description: form.description.value,
+  contactName: form.contactName.value,
+  contactPhone: form.contactPhone.value,
+  email: form.email.value,
 
   }
 
