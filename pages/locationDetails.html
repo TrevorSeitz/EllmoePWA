@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>ELLMOE</title>
+  <title>Food Ninja</title>
   <!-- materialize icons, css & js -->
   <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -40,15 +40,21 @@
   </ul>
 
   <!-- content -->
-  <div class="container grey-text">
-    <h5 class="center">Contact Us</h5>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, porro voluptatum illum veniam eaque sunt sit labore provident eligendi! Voluptate amet suscipit inventore unde maxime atque impedit officia nobis laboriosam!</p>
-    <div class="divider"></div>
-    <h6>Find us at:</h6>
-    <ul>
-      <li>123 Spicy Noodle Road</li>
-      <li>Manchester, UK</li>
-    </ul>
+  <div class="details container grey-text">
+    <div class="card-panel location white row" data-id="${id}">
+        <img src=${data.imageFileLocation} alt="location thumb">
+      <div class="location-details">
+        <div class="location-name">${data.name}</div>
+        <div class="location-venue">${data.venue}</div>
+        <div class="location-description">${data.description}</div>
+        <div class="location-contactName">Contact: ${data.contactName}</div>
+        <div class="location-contactPhone">Phone: ${data.contactPhone}</div>
+        <div class="location-email">email: ${data.email}</div>
+      </div>
+      <div class="location-delete">
+        <i class="material-icons"  data-id="${id}">delete_outline</i>
+      </div>
+    </div>
   </div>
 
   <script src="keys.js"></script>
